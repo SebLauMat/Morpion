@@ -1,14 +1,14 @@
 import Model.Partie;
 import Model.Plateau;
+import View.*;
 
 public class Main {
 
-	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 //		Plateau toto = new Plateau();
-		Partie p1 = new Partie();
-		p1.Game();
+		//Partie p1 = new Partie();
+		//p1.Game();
 		
 		// creer  une partie -> creer un plateau + create joueur* => PLATEAU
 		// choisis le nombre de joueur (nom et signe) => PARTIE

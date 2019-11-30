@@ -1,6 +1,8 @@
 package Model;
 
 
+
+
 //humain hérite de player
 public class Humain extends Joueur {
 	public Humain(String name, int signe ) {

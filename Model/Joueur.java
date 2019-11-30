@@ -1,5 +1,6 @@
 package Model;
 
+
 public abstract class Joueur {
 	// creation d'un joueur
 		public String name;

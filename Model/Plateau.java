@@ -1,5 +1,6 @@
 package Model;
 
+
 public class Plateau {
 
 	private Case[][] Plateau;

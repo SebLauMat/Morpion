@@ -1,9 +1,16 @@
 package Model;
 
+
 import java.util.Scanner;
 
 public class Partie 
 {
+	
+	public Partie()
+	{
+		
+	}
+	
 //	Scanner scan = new Scanner(System.in);
 //	Joueur joueur1 = getJoueur1();
 //	Joueur joueur2 = getJoueur2();
@@ -145,91 +152,93 @@ public class Partie
 	
 	
 	
-//	public Joueur getJoueur1() 
-//	{
-//		boolean etatjoueur1 = false;
-//		System.out.println("Merci de saisir ton Nom: ");
-//		String nameJ1 = scan.nextLine();
-//		int signe = 0;
-//		while( etatjoueur1 == false)
-//			{
-//				System.out.println("Ok "+nameJ1 + " , quel symbole veux-tu jouer? Le X ou le O.");
-//				String signeIn = scan.nextLine();
-//				if( signeIn.intern() == "X" || signeIn.intern() == "O")
-//				{
-//					if(signeIn.intern() == "X") 
-//					{
-//						etatjoueur1 = true;
-//						signe = 1;
-//					}
-//					else if(signeIn.intern() == "O") 
-//					{
-//						etatjoueur1 = true;
-//						signe = 2;
-//					}	
-//				}	
-//			}
-//		
-//		partieType();
-//		return  new Humain(nameJ1, signe);
-//		
-//	}
-//	
-//	public void partieType() 
-//	{
-//		boolean etatPartie = false;
-//		while(etatPartie == false ) 
-//		{
-//			
-//			System.out.println("1 Joueur ou 2 Joueurs ?");
-//			String reponse = scan.nextLine();
-//			if(reponse.intern() == "1") 
-//			{
-//				//joueur2 = IA
-//			}
-//			else if(reponse.intern() == "2") 
-//			{
-//				deuxJoueursOuIA = true;
-//				getJoueur2();
-//			}
-//			
-//		}
-//	}
-//	
-//	public Joueur getJoueur2() 
-//	{
-//		System.out.println("Merci de saisir le nom du joueur 2. ");
-//		System.out.println(joueur1.name);
-//		String nameJ2 = scan.nextLine();
-//		int signe = 0;
-//		if(joueur1.signe == 1) {
-//			signe = 2;
-//		}
-//		else if(joueur1.signe == 2)
-//		{
-//			signe = 1;
-//		}
-//		return new Humain(nameJ2, signe);
-//	}
-//	
-//	public void creationPlateau() 
-//	{
-//		
-//	}
-//
-//	public void tourJoueur1() 
-//	{
-//		
-//	}
-//	
-//	public void tourJoueur2() 
-//	{
-//		
-//	}
-//	
-//	public void finDePartie() 
-//	{
-//		
-//	}
-//
+	public Joueur getJoueur1() 
+	{
+		boolean etatjoueur1 = false;
+		System.out.println("Merci de saisir ton Nom: ");
+		String nameJ1 = scan.nextLine();
+		int signe = 0;
+		while( etatjoueur1 == false)
+			{
+				System.out.println("Ok "+nameJ1 + " , quel symbole veux-tu jouer? Le X ou le O.");
+				String signeIn = scan.nextLine();
+				if( signeIn.intern() == "X" || signeIn.intern() == "O")
+				{
+					if(signeIn.intern() == "X") 
+					{
+						etatjoueur1 = true;
+						signe = 1;
+					}
+					else if(signeIn.intern() == "O") 
+					{
+						etatjoueur1 = true;
+						signe = 2;
+					}	
+				}	
+			}
+		
+		partieType();
+		return  new Humain(nameJ1, signe);
+		
+	}
+	
+	public void partieType() 
+	{
+		boolean etatPartie = false;
+		boolean deuxJoueursOuIA = false;
+		Scanner scan = new Scanner(System.in);
+		while(etatPartie == false ) 
+		{
+			
+			System.out.println("1 Joueur ou 2 Joueurs ?");
+			String reponse = scan.nextLine();
+			if(reponse.intern() == "1") 
+			{
+				//joueur2 = IA
+			}
+			else if(reponse.intern() == "2") 
+			{
+				deuxJoueursOuIA = true;
+				getJoueur2();
+			}
+			
+		}
+	}
+	
+	public Joueur getJoueur2() 
+	{
+		System.out.println("Merci de saisir le nom du joueur 2. ");
+		System.out.println(joueur1.name);
+		String nameJ2 = scan.nextLine();
+		int signe = 0;
+		if(joueur1.signe == 1) {
+			signe = 2;
+		}
+		else if(joueur1.signe == 2)
+		{
+			signe = 1;
+		}
+		return new Humain(nameJ2, signe);
+	}
+	
+	public void creationPlateau() 
+	{
+		
+	}
+
+	public void tourJoueur1() 
+	{
+		
+	}
+	
+	public void tourJoueur2() 
+	{
+		
+	}
+	
+	public void finDePartie() 
+	{
+		
+	}
+
 }
